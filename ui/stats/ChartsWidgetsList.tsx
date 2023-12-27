@@ -53,7 +53,7 @@ const ChartsWidgetsList = ({ filterQuery, isError, isPlaceholderData, charts, in
             >
               <Skeleton isLoaded={ !isPlaceholderData } mb={ 4 } display="inline-block">
                 <Heading size="md" >
-                  { section.title }
+                  { section.title.replace('ETH', '8Bit') }
                 </Heading>
               </Skeleton>
 
@@ -65,8 +65,8 @@ const ChartsWidgetsList = ({ filterQuery, isError, isPlaceholderData, charts, in
                   <ChartWidgetContainer
                     key={ chart.id }
                     id={ chart.id }
-                    title={ chart.title }
-                    description={ chart.description }
+                    title={ chart.title.replace('ETH', '8Bit') }
+                    description={ chart.description.replace('ETH', '8Bit') }
                     interval={ interval }
                     units={ chart.units || undefined }
                     isPlaceholderData={ isPlaceholderData }

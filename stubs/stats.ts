@@ -27,7 +27,7 @@ export const STATS_CHARTS_SECTION: StatsChartsSection = {
     {
       id: 'chart_0',
       title: 'Average transaction fee',
-      description: 'The average amount in ETH spent per transaction',
+      description: 'The average amount in 8Bit spent per transaction',
       units: 'ETH',
     },
     {
