@@ -61,7 +61,7 @@ const TokenTransferTableItem = ({
             noCopy
             my="2px"
           />
-          <Tag isLoading={ isLoading }>{ token.type }</Tag>
+          <Tag isLoading={ isLoading }>{ token.type.replace('ERC', 'BIT') }</Tag>
           <Tag colorScheme="orange" isLoading={ isLoading }>{ getTokenTransferTypeText(type) }</Tag>
         </Flex>
       </Td>
