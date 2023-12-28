@@ -256,7 +256,7 @@ const TokenPageContent = () => {
         data={ contractQuery.data }
         isLoading={ tokenQuery.isPlaceholderData || contractQuery.isPlaceholderData }
         tagsBefore={ [
-          tokenQuery.data ? { label: tokenQuery.data?.type, display_name: tokenQuery.data?.type } : undefined,
+          tokenQuery.data ? { label: tokenQuery.data?.type?.replace('ERC', 'BIT'), display_name: tokenQuery.data?.type?.replace('ERC', 'BIT') } : undefined,
           config.features.bridgedTokens.isEnabled && tokenQuery.data?.is_bridged ?
             { label: 'bridged', display_name: 'Bridged', colorScheme: 'blue', variant: 'solid' } :
             undefined,
