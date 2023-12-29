@@ -1,4 +1,4 @@
-import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 
 type Props = {
@@ -8,12 +8,12 @@ type Props = {
 }
 
 const VerifiedContractsCountersItem = ({ name, total, new24 }: Props) => {
-  const itemBgColor = useColorModeValue('yellow.50', 'yellow.800');
+  // const itemBgColor = useColorModeValue('yellow.50', 'yellow.800');
   return (
     <Box
       w={{ base: '100%', lg: 'calc((100% - 12px)/2)' }}
       borderRadius="12px"
-      backgroundColor={ itemBgColor }
+      backgroundColor="#2a2a2a"
       p={ 3 }
     >
       <Text variant="secondary" fontSize="xs">{ name }</Text>

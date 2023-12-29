@@ -11,14 +11,14 @@ type Props = {
 }
 
 const NumberWidget = ({ label, value, isLoading, description }: Props) => {
-  const bgColor = useColorModeValue('yellow.50', 'yellow.800');
+  // const bgColor = useColorModeValue('yellow.50', 'yellow.800');
   const skeletonBgColor = useColorModeValue('blackAlpha.50', 'whiteAlpha.50');
   const hintColor = useColorModeValue('gray.600', 'gray.400');
 
   return (
     <Flex
       alignItems="flex-start"
-      bg={ isLoading ? skeletonBgColor : bgColor }
+      bg={ isLoading ? skeletonBgColor : '#2a2a2a' }
       px={ 3 }
       py={{ base: 2, lg: 3 }}
       borderRadius={ 12 }
