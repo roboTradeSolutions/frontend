@@ -41,6 +41,18 @@ const Footer = () => {
       text: 'Telegram',
       url: 'https://t.me/Official_8Bitchain',
     },
+    {
+      icon: 'contract',
+      iconSize: '20px',
+      text: 'Whitepaper',
+      url: 'https://whitepaper.8bitchain.io',
+    },
+    {
+      icon: 'globe',
+      iconSize: '20px',
+      text: 'Website',
+      url: 'https://8bitchain.io',
+    },
   ];
 
   const fetch = useFetch();
