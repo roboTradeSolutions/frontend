@@ -98,7 +98,7 @@ const MarketplaceAppModal = ({
             fontSize={{ base: '2xl', sm: '3xl' }}
             fontWeight="medium"
             lineHeight={ 1 }
-            color="blue.600"
+            color="yellow.600"
           >
             { title }
           </Heading>
@@ -155,7 +155,7 @@ const MarketplaceAppModal = ({
           <Box marginBottom={ 2 }>
             { categories.map((category) => (
               <Tag
-                colorScheme="blue"
+                colorScheme="yellow"
                 marginRight={ 2 }
                 marginBottom={ 2 }
                 key={ category }

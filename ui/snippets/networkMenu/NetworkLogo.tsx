@@ -13,7 +13,7 @@ interface Props {
 
 const LogoFallback = ({ isCollapsed, isSmall }: { isCollapsed?: boolean; isSmall?: boolean }) => {
   const field = isSmall ? 'icon' : 'logo';
-  const logoColor = useColorModeValue('blue.600', 'white');
+  const logoColor = useColorModeValue('yellow.600', 'white');
 
   const display = isSmall ? {
     base: 'none',

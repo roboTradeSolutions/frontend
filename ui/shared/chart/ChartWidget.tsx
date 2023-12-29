@@ -191,7 +191,7 @@ const ChartWidget = ({ items, title, description, isLoading, className, isError,
               <IconButton
                 hidden={ isZoomResetInitial }
                 aria-label="Reset zoom"
-                colorScheme="blue"
+                colorScheme="yellow"
                 w={ 9 }
                 h={ 8 }
                 size="sm"

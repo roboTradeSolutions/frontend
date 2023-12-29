@@ -8,7 +8,7 @@ type Props = {
 }
 
 const VerifiedContractsCountersItem = ({ name, total, new24 }: Props) => {
-  const itemBgColor = useColorModeValue('blue.50', 'blue.800');
+  const itemBgColor = useColorModeValue('yellow.50', 'yellow.800');
   return (
     <Box
       w={{ base: '100%', lg: 'calc((100% - 12px)/2)' }}

@@ -13,7 +13,7 @@ interface Props {
 export default function PublicTagFormAction({ control, isDisabled }: Props) {
   const renderRadioGroup = useCallback(({ field }: {field: ControllerRenderProps<Inputs, 'action'>}) => {
     return (
-      <RadioGroup defaultValue="add" colorScheme="blue" { ...field }>
+      <RadioGroup defaultValue="add" colorScheme="yellow" { ...field }>
         <Stack spacing={ 5 }>
           <Radio value="add">
             I want to add tags for my project

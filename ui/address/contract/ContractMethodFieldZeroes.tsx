@@ -97,7 +97,7 @@ const ContractMethodFieldZeroes = ({ onClick, isDisabled }: Props) => {
                     cursor="pointer"
                   >
                     <span>10*{ id }</span>
-                    { selectedOption === id && <IconSvg name="check" boxSize={ 6 } color="blue.600"/> }
+                    { selectedOption === id && <IconSvg name="check" boxSize={ 6 } color="yellow.600"/> }
                   </ListItem>
                 )) }
                 <ListItem

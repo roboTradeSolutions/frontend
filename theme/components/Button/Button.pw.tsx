@@ -9,7 +9,7 @@ import TestApp from 'playwright/TestApp';
   { variant: 'solid', colorScheme: 'gray', withDarkMode: true },
   { variant: 'outline', colorScheme: 'gray', withDarkMode: true },
   { variant: 'outline', colorScheme: 'gray-dark', withDarkMode: true },
-  { variant: 'outline', colorScheme: 'blue', withDarkMode: true },
+  { variant: 'outline', colorScheme: 'yellow', withDarkMode: true },
   { variant: 'simple', withDarkMode: true },
   { variant: 'ghost', withDarkMode: true },
   { variant: 'subtle' },
