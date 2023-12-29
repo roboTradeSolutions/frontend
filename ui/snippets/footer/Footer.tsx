@@ -42,13 +42,13 @@ const Footer = () => {
       url: 'https://t.me/Official_8Bitchain',
     },
     {
-      icon: 'contract',
+      icon: 'contract' as const,
       iconSize: '20px',
       text: 'Whitepaper',
       url: 'https://whitepaper.8bitchain.io',
     },
     {
-      icon: 'globe',
+      icon: 'globe' as const,
       iconSize: '20px',
       text: 'Website',
       url: 'https://8bitchain.io',
