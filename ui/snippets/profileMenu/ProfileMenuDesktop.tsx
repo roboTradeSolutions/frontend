@@ -50,13 +50,13 @@ const ProfileMenuDesktop = ({ isHomePage }: Props) => {
     if (hasMenu) {
       return 'subtle';
     }
-    return isHomePage ? 'solid' : 'outline';
+    return isHomePage ? 'outline' : 'outline';
   }, [ hasMenu, isHomePage ]);
 
   let iconButtonStyles: Partial<IconButtonProps> = {};
   if (hasMenu) {
     iconButtonStyles = {
-      bg: isHomePage ? 'blue.50' : themedBackground,
+      bg: isHomePage ? themedBackground : themedBackground,
     };
   } else if (isHomePage) {
     iconButtonStyles = {

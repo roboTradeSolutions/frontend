@@ -25,13 +25,13 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
     if (isWalletConnected) {
       return 'subtle';
     }
-    return isHomePage ? 'solid' : 'outline';
+    return isHomePage ? 'outline' : 'outline';
   }, [ isWalletConnected, isHomePage ]);
 
   let buttonStyles: Partial<ButtonProps> = {};
   if (isWalletConnected) {
     buttonStyles = {
-      bg: isHomePage ? 'blue.50' : themedBackground,
+      bg: isHomePage ? 'black.50' : themedBackground,
       color: isHomePage ? 'blackAlpha.800' : themedColor,
       _hover: {
         color: isHomePage ? 'blackAlpha.800' : themedColor,
@@ -62,7 +62,7 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
           <PopoverTrigger>
             <Button
               variant={ variant }
-              colorScheme="blue"
+              colorScheme="black"
               flexShrink={ 0 }
               isLoading={ isModalOpening || isModalOpen }
               loadingText="Connect wallet"
