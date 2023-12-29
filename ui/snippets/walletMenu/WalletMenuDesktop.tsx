@@ -25,7 +25,7 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
     if (isWalletConnected) {
       return 'subtle';
     }
-    return isHomePage ? 'outline' : 'outline';
+    return isHomePage ? 'solid' : 'outline';
   }, [ isWalletConnected, isHomePage ]);
 
   let buttonStyles: Partial<ButtonProps> = {};

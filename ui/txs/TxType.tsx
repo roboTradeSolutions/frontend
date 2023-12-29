@@ -20,11 +20,11 @@ const TxType = ({ types, isLoading }: Props) => {
   switch (typeToShow) {
     case 'contract_call':
       label = 'Contract call';
-      colorScheme = 'yellow';
+      colorScheme = 'blue';
       break;
     case 'contract_creation':
       label = 'Contract creation';
-      colorScheme = 'yellow';
+      colorScheme = 'blue';
       break;
     case 'token_transfer':
       label = 'Token transfer';
