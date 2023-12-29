@@ -37,7 +37,7 @@ const ContractConnectWallet = () => {
         <>
           <span>Disconnected</span>
           <Button
-            colorScheme="blackAlpha"
+            colorScheme="yellow"
             ml={ 3 }
             onClick={ handleConnect }
             size="sm"
