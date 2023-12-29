@@ -40,6 +40,7 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
   } else if (isHomePage) {
     buttonStyles = {
       color: 'white',
+      bg: 'black',
     };
   } else {
     buttonStyles = {
@@ -62,10 +63,10 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
           <PopoverTrigger>
             <Button
               variant={ variant }
-              colorScheme="gray"
+              colorScheme="black"
               flexShrink={ 0 }
               isLoading={ isModalOpening || isModalOpen }
-              loadingText="Connect wallet"
+              loadingText="Connect Wallet"
               onClick={ isWalletConnected ? setIsPopoverOpen.on : connect }
               fontSize="sm"
               { ...buttonStyles }
