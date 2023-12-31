@@ -32,9 +32,9 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
   if (isWalletConnected) {
     buttonStyles = {
       bg: isHomePage ? 'black' : themedBackground,
-      color: isHomePage ? 'blackAlpha.800' : themedColor,
+      color: isHomePage ? 'white' : themedColor,
       _hover: {
-        color: isHomePage ? 'blackAlpha.800' : themedColor,
+        color: isHomePage ? 'white' : themedColor,
       },
     };
   } else if (isHomePage) {
