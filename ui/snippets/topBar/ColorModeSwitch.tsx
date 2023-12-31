@@ -3,7 +3,7 @@ import React from 'react';
 import * as cookies from 'lib/cookies';
 // import IconSvg from 'ui/shared/IconSvg';
 
-// import ColorModeSwitchTheme from './ColorModeSwitchTheme';
+import ColorModeSwitchTheme from './ColorModeSwitchTheme';
 import { COLOR_THEMES } from './utils';
 
 const ColorModeSwitch = () => {
@@ -25,6 +25,7 @@ const ColorModeSwitch = () => {
     window.document.documentElement.style.setProperty(varName, hex);
 
     cookies.set(cookies.NAMES.COLOR_MODE_HEX, hex);
+    cookies.set(cookies.NAMES.COLOR_MODE, 'dark');
   }, [ ]);
 
   React.useEffect(() => {
@@ -39,7 +40,9 @@ const ColorModeSwitch = () => {
     // })();
 
     // const fallbackHex = (COLOR_THEMES.find(theme => theme.colorMode === nextColorMode && theme.colors.length === 1) ?? COLOR_THEMES[0]).colors[0].hex;
-    // const cookieHex = cookies.get(cookies.NAMES.COLOR_MODE_HEX) ?? fallbackHex;
+    // const cookieHex = cookies.get(cookies.NAMES.COLOR_MODE_HEX) ?? fallbackHex;]
+    cookies.set(cookies.NAMES.COLOR_MODE_HEX, '#101112');
+    cookies.set(cookies.NAMES.COLOR_MODE, 'dark');
     setTheme('#101112');
     // setActiveHex('#101112');
   // should run only on mount
