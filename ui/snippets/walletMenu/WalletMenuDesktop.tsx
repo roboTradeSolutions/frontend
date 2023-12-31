@@ -31,7 +31,7 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
   let buttonStyles: Partial<ButtonProps> = {};
   if (isWalletConnected) {
     buttonStyles = {
-      bg: isHomePage ? 'black.50' : themedBackground,
+      bg: isHomePage ? 'black' : themedBackground,
       color: isHomePage ? 'blackAlpha.800' : themedColor,
       _hover: {
         color: isHomePage ? 'blackAlpha.800' : themedColor,
