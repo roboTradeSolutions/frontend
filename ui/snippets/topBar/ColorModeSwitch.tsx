@@ -3,7 +3,7 @@ import React from 'react';
 import * as cookies from 'lib/cookies';
 // import IconSvg from 'ui/shared/IconSvg';
 
-import ColorModeSwitchTheme from './ColorModeSwitchTheme';
+// import ColorModeSwitchTheme from './ColorModeSwitchTheme';
 import { COLOR_THEMES } from './utils';
 
 const ColorModeSwitch = () => {
