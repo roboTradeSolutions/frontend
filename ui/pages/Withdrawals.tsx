@@ -75,7 +75,7 @@ const Withdrawals = () => {
 
   return (
     <>
-      <PageTitle title="Withdrawals" withTextAd/>
+      <PageTitle title="Withdrawals"/>
       <DataListDisplay
         isError={ isError }
         items={ data?.items }
