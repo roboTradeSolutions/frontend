@@ -142,7 +142,7 @@ const PageTitle = ({ title, contentAfter, backLink, className, isLoading, afterT
         { contentAfter }
       </Flex>
       { secondRow && (
-        <Flex alignItems="center" minH={ 10 } overflow="hidden">
+        <Flex alignItems="center" minH={ 10 } overflow="hidden" _empty={{ display: 'none' }}>
           { secondRow }
         </Flex>
       ) }

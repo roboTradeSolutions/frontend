@@ -25,8 +25,8 @@ const ColorModeSwitch = () => {
     window.document.documentElement.style.setProperty(varName, hex);
 
     cookies.set(cookies.NAMES.COLOR_MODE_HEX, hex);
-    cookies.set(cookies.NAMES.COLOR_MODE, 'dark');
-  }, [ ]);
+    window.localStorage.setItem(cookies.NAMES.COLOR_MODE, 'dark');
+  }, [  ]);
 
   React.useEffect(() => {
     // const cookieColorMode = cookies.get(cookies.NAMES.COLOR_MODE);
