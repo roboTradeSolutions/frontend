@@ -23,7 +23,6 @@ import { generateListStub } from 'stubs/utils';
 import AddressContract from 'ui/address/AddressContract';
 import AddressQrCode from 'ui/address/details/AddressQrCode';
 import AccountActionsMenu from 'ui/shared/AccountActionsMenu/AccountActionsMenu';
-import TextAd from 'ui/shared/ad/TextAd';
 import AddressAddToWallet from 'ui/shared/address/AddressAddToWallet';
 import AddressEntity from 'ui/shared/entities/address/AddressEntity';
 import * as TokenEntity from 'ui/shared/entities/token/TokenEntity';
@@ -257,7 +256,7 @@ const TokenPageContent = () => {
         data={ contractQuery.data }
         isLoading={ tokenQuery.isPlaceholderData || contractQuery.isPlaceholderData }
         tagsBefore={ [
-          tokenQuery.data ? { label: tokenQuery.data?.type, display_name: tokenQuery.data?.type } : undefined,
+          tokenQuery.data ? { label: tokenQuery.data?.type?.replace('ERC', 'BIT'), display_name: tokenQuery.data?.type?.replace('ERC', 'BIT') } : undefined,
           config.features.bridgedTokens.isEnabled && tokenQuery.data?.is_bridged ?
             { label: 'bridged', display_name: 'Bridged', colorScheme: 'blue', variant: 'solid' } :
             undefined,
@@ -295,7 +294,6 @@ const TokenPageContent = () => {
 
   return (
     <>
-      <TextAd mb={ 6 }/>
       <PageTitle
         title={ `${ tokenQuery.data?.name || 'Unnamed token' }${ tokenSymbolText }` }
         isLoading={ isLoading }

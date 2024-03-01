@@ -15,6 +15,7 @@ const ContractConnectWallet = () => {
         <>
           <span>Disconnected</span>
           <Button
+            colorScheme="yellow"
             ml={ 3 }
             onClick={ connect }
             size="sm"
@@ -22,7 +23,7 @@ const ContractConnectWallet = () => {
             isLoading={ isModalOpening || isModalOpen }
             loadingText="Connect wallet"
           >
-              Connect wallet
+              Connect Wallet
           </Button>
         </>
       );

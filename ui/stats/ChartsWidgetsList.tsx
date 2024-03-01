@@ -62,7 +62,7 @@ const ChartsWidgetsList = ({ filterQuery, isError, isPlaceholderData, charts, in
             >
               <Skeleton isLoaded={ !isPlaceholderData } mb={ 4 } display="inline-flex" alignItems="center" columnGap={ 2 } id={ section.id }>
                 <Heading size="md" >
-                  { section.title }
+                  { section.title.replace('ETH', '8Bit') }
                 </Heading>
                 { section.id === 'gas' && homeStatsQuery.data && homeStatsQuery.data.gas_prices && (
                   <GasInfoTooltip data={ homeStatsQuery.data } dataUpdatedAt={ homeStatsQuery.dataUpdatedAt }>
@@ -79,8 +79,8 @@ const ChartsWidgetsList = ({ filterQuery, isError, isPlaceholderData, charts, in
                   <ChartWidgetContainer
                     key={ chart.id }
                     id={ chart.id }
-                    title={ chart.title }
-                    description={ chart.description }
+                    title={ chart.title.replace('ETH', '8Bit') }
+                    description={ chart.description.replace('ETH', '8Bit') }
                     interval={ interval }
                     units={ chart.units || undefined }
                     isPlaceholderData={ isPlaceholderData }

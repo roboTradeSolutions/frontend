@@ -54,7 +54,7 @@ const TokenTransferListItem = ({
             noCopy
             w="auto"
           />
-          <Tag flexShrink={ 0 } isLoading={ isLoading }>{ token.type }</Tag>
+          <Tag flexShrink={ 0 } isLoading={ isLoading }>{ token.type.replace('ERC', 'BIT') }</Tag>
           <Tag colorScheme="orange" isLoading={ isLoading }>{ getTokenTransferTypeText(type) }</Tag>
         </Flex>
         { showTxInfo && txHash && (

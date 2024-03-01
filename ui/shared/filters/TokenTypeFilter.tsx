@@ -44,7 +44,7 @@ const TokenTypeFilter = <T extends TokenType | NFTTokenType>({ nftOnly, onChange
       <CheckboxGroup size="lg" onChange={ handleChange } value={ value }>
         { (nftOnly ? NFT_TOKEN_TYPES : TOKEN_TYPES).map(({ title, id }) => (
           <Checkbox key={ id } value={ id }>
-            <Text fontSize="md">{ title }</Text>
+            <Text fontSize="md">{ title.replace('ERC', 'BIT') }</Text>
           </Checkbox>
         )) }
       </CheckboxGroup>

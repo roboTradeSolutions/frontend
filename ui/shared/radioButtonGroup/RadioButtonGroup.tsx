@@ -19,8 +19,8 @@ type RadioButtonProps = UseRadioProps & RadioItemProps;
 
 const RadioButton = (props: RadioButtonProps) => {
   const { getInputProps, getRadioProps } = useRadio(props);
-  const buttonColor = useColorModeValue('blue.50', 'gray.800');
-  const checkedTextColor = useColorModeValue('blue.700', 'gray.50');
+  const buttonColor = useColorModeValue('yellow.50', 'gray.800');
+  const checkedTextColor = useColorModeValue('yellow.700', 'gray.50');
 
   const input = getInputProps();
   const checkbox = getRadioProps();

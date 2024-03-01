@@ -131,7 +131,7 @@ test('customization', async({ mount }) => {
         truncation="constant"
         p={ 3 }
         borderWidth="1px"
-        borderColor="blue.700"
+        borderColor="yellow.700"
       />
     </TestApp>,
   );

@@ -98,7 +98,7 @@ const WatchListItem = ({ item, isLoading, onEditClick, onDeleteClick }: Props) =
           <Text fontSize="sm" fontWeight={ 500 }>Email notification</Text>
           <Skeleton isLoaded={ !isLoading } display="inline-block">
             <Switch
-              colorScheme="blue"
+              colorScheme="yellow"
               size="md"
               isChecked={ notificationEnabled }
               onChange={ onSwitch }

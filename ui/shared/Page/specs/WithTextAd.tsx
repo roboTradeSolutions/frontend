@@ -15,7 +15,6 @@ const WithTextAd = () => {
       title="Block"
       backLink={ backLink }
       contentAfter={ <Tag key="custom" colorScheme="orange" variant="solid">Awesome</Tag> }
-      withTextAd
     />
   );
 };

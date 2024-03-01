@@ -67,7 +67,7 @@ const ChainIndicators = () => {
       p={{ base: 0, lg: 8 }}
       borderRadius={{ base: 'none', lg: 'lg' }}
       boxShadow={{ base: 'none', lg: 'xl' }}
-      bgColor={{ base: bgColorMobile, lg: bgColorDesktop }}
+      bgColor={{ base: '#2a2a2a', lg: '#2a2a2a' }}
       columnGap={ 12 }
       rowGap={ 0 }
       flexDir={{ base: 'column', lg: 'row' }}
@@ -90,7 +90,7 @@ const ChainIndicators = () => {
           as="ul"
           p={ 3 }
           borderRadius="lg"
-          bgColor={{ base: listBgColorMobile, lg: listBgColorDesktop }}
+          bgColor={{ base: '#2a2a2a', lg: '#2a2a2a' }}
           rowGap={ 3 }
           order={{ base: 1, lg: 2 }}
         >

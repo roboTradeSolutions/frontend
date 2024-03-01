@@ -60,7 +60,7 @@ const TokenSelectItem = ({ data }: Props) => {
       borderColor="divider"
       borderBottomWidth="1px"
       _hover={{
-        bgColor: useColorModeValue('blue.50', 'gray.800'),
+        bgColor: useColorModeValue('yellow.50', 'gray.800'),
       }}
       color="initial"
       fontSize="sm"

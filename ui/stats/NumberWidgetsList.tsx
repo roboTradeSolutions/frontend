@@ -38,10 +38,10 @@ const NumberWidgetsList = () => {
           return (
             <StatsWidget
               key={ id + (isPlaceholderData ? index : '') }
-              label={ title }
+              label={ title.replace('ETH', '8Bit') }
               value={ `${ Number(value).toLocaleString(undefined, { maximumFractionDigits: 3, notation: 'compact' }) }${ unitsStr }` }
               isLoading={ isPlaceholderData }
-              hint={ description }
+              hint={ description?.replace('ETH', '8Bit') }
             />
           );
         })

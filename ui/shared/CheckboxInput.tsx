@@ -29,7 +29,7 @@ export default function CheckboxInput<Inputs extends FieldValues, Name extends P
       isChecked={ field.value }
       onChange={ handleChange }
       ref={ field.ref }
-      colorScheme="blue"
+      colorScheme="yellow"
       size="lg"
       isDisabled={ isDisabled }
     >
