@@ -45,13 +45,13 @@ const Footer = () => {
       icon: 'contract' as const,
       iconSize: '20px',
       text: 'Whitepaper',
-      url: 'https://whitepaper.8bitchain.io',
+      url: 'https://whitepaper.8bitchain.finance',
     },
     {
       icon: 'globe' as const,
       iconSize: '20px',
       text: 'Website',
-      url: 'https://8bitchain.io',
+      url: 'https://8bitchain.finance',
     },
   ];
 
