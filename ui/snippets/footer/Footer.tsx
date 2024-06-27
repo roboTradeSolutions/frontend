@@ -86,7 +86,7 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Text mt={ 3 } fontSize="sm" fontWeight="bold">  Powered by  <Link fontSize="sm" href="https://8bitchain.io/">8Bit Chain</Link> </Text>
+        <Text mt={ 3 } fontSize="sm" fontWeight="bold">  Powered by  <Link fontSize="sm" href="https://8bitchain.finance/">8Bit Chain</Link> </Text>
         <Text mt={ 3 } fontSize="xs">
          8Bit Scan serves as a block explorer dedicated to analyzing transactions on the 8Bit Chain
         </Text>
